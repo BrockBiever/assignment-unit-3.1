@@ -93,8 +93,9 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 //      contains the value "teal".)
 
 
-colors.pop(colors[4]);
-
+let lastColor = colors.pop(colors[4]);
+console.log(lastColor, 'was removed') ;
+console.log( 'Colors are now' , colors) ;
 // Example: Remove the first animal using the Array.shift method.
 removedAnimal = animalArray.shift();
 console.log('Removed the first animal', removedAnimal);
@@ -104,9 +105,9 @@ console.log('The animals are now', animalArray);
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!  
 ;
-colors.shift(color[0]);
-
-console.log(colors);
+let firstColor = colors.shift(color[0]);
+console.log(firstColor, 'was added')
+console.log('colors are now', colors);
 
 // STRETCH GOALS:
 
@@ -138,8 +139,8 @@ let gemString = gems.join(' and ');
 //     It should look something like:
 //       ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 //     Now, console.log the new array.
-let colorfulGems= colors.concat(gems);
-console.log(colorfulGems)
+let colorfulGems= gems.concat(colors);
+console.log(colorfulGems) ;
 
 
 // DO NOT MODIFY
